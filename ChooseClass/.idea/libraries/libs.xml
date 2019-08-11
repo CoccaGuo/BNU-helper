@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/libs/protobuf-java-2.6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libs/okio-1.6.0-leancloud.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libs/okhttp-2.6.0-leancloud.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libs/jsoup-1.10.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libs/Java-WebSocket-1.3.2-leancloud.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libs/fastjson.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libs/avoscloud-statistics-v3.14.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libs/avoscloud-sdk-v3.14.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libs/avoscloud-push-v3.14.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libs/avoscloud-feedback-v3.14.5.jar!/" />
+      <root url="file://$PROJECT_DIR$/src/libs" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/src/libs" recursive="false" />
+  </library>
+</component>

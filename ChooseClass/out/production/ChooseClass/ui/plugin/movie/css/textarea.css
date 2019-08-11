@@ -1,0 +1,28 @@
+.text-area{
+    -fx-background-insets: 0;
+    -fx-background-color: transparent, white, transparent, white;
+    -fx-border-style: solid;
+    -fx-border-color: #c9c9c9;
+    -fx-border-radius: 5;
+}
+
+.text-area .content {
+    -fx-background-color: transparent, white, transparent, white;
+}
+
+.text-area:focused {
+    -fx-background-color: transparent, white, transparent, white;
+}
+
+.button:hover {
+    -fx-background-color: #8ec99d;
+}
+
+.button {
+    -fx-border-color: #b1b1b1;
+    -fx-background-color: #ffffff;
+}
+
+.button:focused {
+    -fx-border-color: #b1b1b1;
+}

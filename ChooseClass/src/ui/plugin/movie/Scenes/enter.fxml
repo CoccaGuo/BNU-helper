@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="257.0" prefWidth="440.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.Scenes.Enter">
+   <children>
+      <Label layoutX="307.0" layoutY="244.0" text="author:Cocca     Ver:1.0" />
+      <Label alignment="CENTER" layoutX="131.0" layoutY="111.0" prefHeight="33.0" prefWidth="178.0" text="532Movie" textAlignment="CENTER">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="243.0" layoutY="148.0" text="载入中..." />
+   </children>
+</AnchorPane>

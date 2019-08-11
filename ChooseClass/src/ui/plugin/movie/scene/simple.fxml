@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="index" minHeight="-Infinity" minWidth="-Infinity" prefHeight="624.0" prefWidth="955.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../css/blank.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.plugin.movie.scene.Simple">
+    <children>
+        <ImageView fx:id="pic" fitHeight="347.0" fitWidth="259.0" layoutX="696.0" layoutY="281.0" onMouseClicked="#toBanner" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+        <TextField fx:id="input" layoutX="344.0" layoutY="190.0" onKeyPressed="#check" prefHeight="30.0" prefWidth="267.0" style="-fx-font-style: #000000;" AnchorPane.leftAnchor="344.0" AnchorPane.rightAnchor="344.0" AnchorPane.topAnchor="190.0" />
+        <Label fx:id="bannerName" alignment="CENTER" contentDisplay="CENTER" layoutX="371.0" layoutY="153.0" onMouseClicked="#toBanner" prefHeight="37.0" prefWidth="213.0" stylesheets="@../css/default.css" text="532movie download↓" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" underline="true" AnchorPane.leftAnchor="371.0" AnchorPane.rightAnchor="371.0" AnchorPane.topAnchor="153.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+      <Label layoutX="554.0" layoutY="228.0" prefHeight="15.0" prefWidth="73.0" text="↑回车来搜索" textAlignment="CENTER" underline="true" AnchorPane.rightAnchor="341.0" AnchorPane.topAnchor="228.0" />
+    </children>
+</AnchorPane>

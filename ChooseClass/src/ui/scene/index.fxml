@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="index" prefHeight="728.0" prefWidth="1137.0" stylesheets="@index.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.scene.Index">
+   <children>
+      <Label fx:id="name" alignment="BOTTOM_LEFT" layoutX="14.0" layoutY="14.0" onMouseClicked="#info" prefHeight="20.0" prefWidth="175.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="time" alignment="CENTER_RIGHT" layoutX="512.0" layoutY="13.0" prefHeight="15.0" prefWidth="566.0" text="Label" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="2.0" />
+      <Label fx:id="stat" layoutX="4.0" layoutY="471.0" prefHeight="15.0" prefWidth="793.0" text="Label" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+      <ScrollPane id="box" hbarPolicy="NEVER" layoutX="586.0" layoutY="32.0" prefHeight="460.0" prefWidth="149.0" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="20.0">
+         <content>
+            <VBox fx:id="website" pickOnBounds="false" prefHeight="681.0" prefWidth="149.0" />
+         </content>
+      </ScrollPane>
+      <ScrollPane id="box" layoutX="14.0" layoutY="406.0" prefHeight="57.0" prefWidth="618.0" vbarPolicy="NEVER" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="168.0">
+         <content>
+            <HBox fx:id="tools" pickOnBounds="false" prefHeight="56.0" prefWidth="951.0" spacing="15.0" />
+         </content>
+      </ScrollPane>
+      <TabPane fx:id="main" layoutX="14.0" layoutY="20.0" pickOnBounds="false" prefHeight="624.0" prefWidth="955.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="84.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="168.0" AnchorPane.topAnchor="20.0" />
+   </children>
+</AnchorPane>

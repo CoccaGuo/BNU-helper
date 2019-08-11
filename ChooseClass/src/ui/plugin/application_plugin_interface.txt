@@ -1,0 +1,46 @@
+1.实现Pluginable接口。
+2.文件放置在ui/plugin/目录下。
+3.请保证主类是p开头的文件,并将主类直接放置在ui/plugin/interfaces/下。
+4.AnchorPane的大小为955*624。
+
+
+
+
+
+ public static final String img = "/util/res/pic/....png";
+    public static final String title = "...";
+    public static AnchorPane ap = null;
+    public static AnchorPane index = null;
+    public static Label label = null;
+
+    @Override
+    public AnchorPane getAnchorPane() {
+        try {
+            ap = FXMLLoader.load(getClass().getResource("/ui/plugin/.../simple.fxml"));
+            //ap.getParent().getStylesheets().add(this.getClass().getResource("/ui/plugin/movie/css/default.css").toExternalForm());
+        } catch (IOException e) {
+            Errorer.error(index,e);
+        }
+
+        return ap;
+    }
+
+    @Override
+    public String getImg() {
+        return img;
+    }
+
+    @Override
+    public String getTitle() {
+        return title;
+    }
+
+    @Override
+    public void setIndexAnchorPane(AnchorPane anchorPane) {
+        index = anchorPane;
+    }
+
+    @Override
+    public void setStatusTag(Label label) {
+        this.label = label;
+    }

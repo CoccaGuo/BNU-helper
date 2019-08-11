@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="index" prefHeight="944.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.Scenes.IndexCont">
+   <children>
+      <ImageView fx:id="pic" fitHeight="515.0" fitWidth="1289.0" onMouseClicked="#toBanner" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="input" layoutX="776.0" layoutY="31.0" onKeyPressed="#check" prefHeight="23.0" prefWidth="225.0" />
+      <Button layoutX="1018.0" layoutY="31.0" mnemonicParsing="false" onAction="#search" prefHeight="23.0" prefWidth="56.0" text="搜索" />
+      <Label fx:id="bannerName" layoutX="35.0" layoutY="391.0" onMouseClicked="#toBanner" prefHeight="37.0" prefWidth="343.0" stylesheets="@../css/default.css" text="532movie" textFill="WHITE" AnchorPane.leftAnchor="35.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ScrollPane hbarPolicy="NEVER" layoutY="437.0" prefHeight="363.0" prefWidth="1180.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="437.0">
+         <content>
+            <FlowPane fx:id="like" prefHeight="1372.0" prefWidth="1350.0" />
+         </content>
+      </ScrollPane>
+      <FlowPane fx:id="alertArea" alignment="BOTTOM_RIGHT" prefHeight="603.0" prefWidth="408.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="2.0" />
+   </children>
+</AnchorPane>

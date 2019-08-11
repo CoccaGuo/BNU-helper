@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.scene.Login">
+   <children>
+      <ImageView fx:id="pic" fitHeight="408.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="93.0" layoutY="162.0" text="账号">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="93.0" layoutY="209.0" text="密码">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ac" layoutX="146.0" layoutY="163.0" />
+      <PasswordField fx:id="pw" layoutX="146.0" layoutY="210.0" />
+      <Label layoutX="92.0" layoutY="69.0" prefHeight="50.0" prefWidth="108.0" text="数字京师">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="rempw" layoutX="146.0" layoutY="253.0" mnemonicParsing="false" text="记住密码" />
+      <CheckBox fx:id="autologin" layoutX="241.0" layoutY="253.0" mnemonicParsing="false" text="自动登录" />
+      <Button fx:id="login" layoutX="192.0" layoutY="299.0" mnemonicParsing="false" onAction="#login" prefHeight="24.0" prefWidth="69.0" text="登录" />
+      <Label fx:id="status" layoutX="146.0" layoutY="141.0" prefHeight="15.0" prefWidth="161.0" textFill="#eb0505" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,44 @@
+#box {
+    -fx-border-color: #c4c4c4;
+    -fx-background-color: transparent, white, transparent, white;
+    -fx-border-radius: 5;
+}
+
+#box:focused {
+    -fx-background-color: transparent, white, transparent, white;
+    -fx-border-radius: 5;
+    -fx-border-color: #6e6e6e;
+}
+
+.tab-pane {
+    -fx-border-color: #c4c4c4;
+    -fx-background-color: transparent, white, transparent, white;
+    -fx-border-radius: 5;
+}
+
+.tab-pane:focused {
+    -fx-background-color: transparent, white, transparent, white;
+    -fx-border-radius: 5;
+}
+
+.tab {
+    -fx-border-color: #c4c4c4;
+    -fx-background-color: transparent, white, transparent, white;
+}
+
+.tab:focused {
+    -fx-background-color: transparent, #c9c8c0, transparent, #c7ffbe;
+
+}
+
+.tab:hover {
+    -fx-background-color: #e6f5d3;
+    -fx-border-radius: 3;
+    -fx-animated: true;
+}
+
+.tab:selected {
+    -fx-background-color: transparent, #c9c8c0, transparent, #c7ffbe;
+    -fx-border-radius: 3;
+}
+

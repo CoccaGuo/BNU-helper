@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="305.0" prefWidth="533.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.plugin.listener.Listen">
+   <children>
+      <Label layoutX="31.0" layoutY="37.0" prefHeight="19.0" prefWidth="81.0" text="监听设置">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="86.0" layoutY="96.0" text="监听内容">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="contents" layoutX="171.0" layoutY="93.0" prefHeight="29.0" prefWidth="280.0" />
+      <Label layoutX="86.0" layoutY="153.0" prefHeight="19.0" prefWidth="68.0" text="通知方式">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="infoMethod" layoutX="171.0" layoutY="150.0" prefHeight="29.0" prefWidth="280.0" />
+      <Button layoutX="364.0" layoutY="233.0" mnemonicParsing="false" onAction="#listen" prefHeight="29.0" prefWidth="87.0" text="开始监听" />
+   </children>
+</AnchorPane>
