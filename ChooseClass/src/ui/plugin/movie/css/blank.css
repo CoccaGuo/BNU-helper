@@ -103,6 +103,38 @@ is being used to size a border should also be in pixels.
 
 }
 
+.text-area{
+    -fx-background-insets: 0;
+    -fx-background-color: transparent, white, transparent, white;
+    -fx-border-style: solid;
+    -fx-border-color: #c9c9c9;
+    -fx-border-radius: 5;
+}
+
+.text-area .content {
+    -fx-background-color: transparent, white, transparent, white;
+}
+
+.text-area:focused {
+    -fx-background-color: transparent, white, transparent, white;
+}
+
+.text-area{
+    -fx-background-insets: 0;
+    -fx-background-color: transparent, white, transparent, white;
+    -fx-border-style: solid;
+    -fx-border-color: #c9c9c9;
+    -fx-border-radius: 5;
+}
+
+.text-area .content {
+    -fx-background-color: transparent, white, transparent, white;
+}
+
+.text-area:focused {
+    -fx-background-color: transparent, white, transparent, white;
+}
+
 .button {
     -fx-background-color: #ffffff;
     -fx-border-style: solid;

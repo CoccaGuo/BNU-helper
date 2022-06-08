@@ -40,6 +40,7 @@ public class VideoItem {
     }
 
     public VideoItem(String videoUrl){ //传入单集影片主页的网址
+        long tic = System.currentTimeMillis();
         String[] cache = videoUrl.split("/");
         this.number = Integer.parseInt(cache[cache.length-1].split("\\.")[0]);
         this.video = null;
@@ -93,6 +94,8 @@ public class VideoItem {
         }
         this.indexUrl = trueUrlList.split("\\+\\+\\+");
         this.videoCount = this.indexUrl.length;
+
+        System.out.println((System.currentTimeMillis()-tic));
     }
 
     public String getName() {

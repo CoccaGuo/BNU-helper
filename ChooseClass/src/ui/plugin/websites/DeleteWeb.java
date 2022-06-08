@@ -32,7 +32,7 @@ public class DeleteWeb extends StackPane {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            primaryStage.setTitle("add website");
+            primaryStage.setTitle("delete website");
             Scene scene = new Scene(root);
             primaryStage.setScene(scene);
             primaryStage.show();

@@ -495,6 +495,26 @@ public class SchoolworkAssist {
         return courses;
     }
 
+
+    public String fetchClassroomArrangement() throws IOException {
+        Connection conn = Jsoup.connect(TABLE_URL + COURSE_LIST_TABLE_ID)
+                .timeout(getTimeout())
+                .cookies(getCookies())
+                .header(HEADER_REFERER, REFERER)
+                .header(USER_AGENT_HEADER, USER_AGENT)
+                .header(HEADER_CONTENT_TYPE, CONTENT_TYPE)
+                .data("kblx","jsikb")
+                .data("hidSYDW","00")
+                .data("xssj","xssj")
+                .data("xsrq","xsrq")
+                .data("sfxsym","xsym")
+                .data("xn","2019")
+                .data("selSYDW","00")
+                .data("xnxq","2019,0")
+                .data("menucode_current","JW130424");
+      Document document =  conn.post();
+      return document.body().toString();
+    }
     public ArrayList<PlanChildCourse> getPlanChildCourses(PlanCourse course)
             throws IOException, NeedLoginException, JSONException {
 
@@ -1645,30 +1665,4 @@ public class SchoolworkAssist {
     }
 
 
-    public static void main(String[] args) throws IOException, NeedLoginException, LoginException, JSONException {
-        SchoolworkAssist schoolworkAssist = new SchoolworkAssist("201711140121", "CoccaGuo1998");
-        schoolworkAssist.login();
-        System.out.println(schoolworkAssist.getStudentInfo().toString());
-        ArrayList<ElectiveCourse> electiveCourses = schoolworkAssist.getElectiveCourses(false);
-
-        //EChildCourse planChildCourse = schoolworkAssist.getPlanChildCourses(electiveCourses.get(30)).get(0);
-        // schoolworkAssist.selectElectiveCourse(electiveCourses.get(1));
-        int i = 0;
-        for (ElectiveCourse e :
-                electiveCourses) {
-            System.out.println(i + " " + e.toString());
-            try {
-                schoolworkAssist.selectElectiveCourse(electiveCourses.get(i));
-
-            } catch (Exception e1) {
-            }
-            try {
-                Thread.sleep(1000);
-            } catch (Exception e3) {
-
-            }
-            i++;
-        }
-
-    }
 }

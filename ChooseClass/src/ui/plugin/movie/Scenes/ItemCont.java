@@ -26,8 +26,6 @@ import java.io.IOException;
 public class ItemCont implements ControlledStage {
     StageController myStageController;
     @FXML
-    private FlowPane alertArea;
-    @FXML
     private TextArea info;
 
     @FXML
@@ -41,8 +39,6 @@ public class ItemCont implements ControlledStage {
     @FXML
     private TextArea summary;
 
-    @FXML
-    private FlowPane download;
     static private VideoItem item;
 
 
@@ -56,15 +52,6 @@ public class ItemCont implements ControlledStage {
     void initialize(){
         item = Card.choosedItem;
         start();
-
-        addC();
-
-    }
-
-    public void addC(){
-        for (int i = 1; i < item.indexUrl.length+1 ; i++) {
-            download.getChildren().add(new Download(item,i));
-        }
     }
     public void start(){
         name.setText(item.getName());

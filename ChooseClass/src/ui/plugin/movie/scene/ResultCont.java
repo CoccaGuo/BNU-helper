@@ -110,7 +110,9 @@ public class ResultCont  {
                     }
                     for (String url:
                             urlList) {
-                        resList.add(new LongCard(new VideoItem(VideoItem.getINDEX()+url)));
+                       VideoItem videoItem = new VideoItem(VideoItem.getINDEX()+url);
+                       Platform.runLater(()->p532Download.label.setText("解析 "+videoItem.getName()+" 中..."));
+                        resList.add(new LongCard(videoItem));
                     }
                     if (resList.size()==0){
                         resList.add(new LongCard());

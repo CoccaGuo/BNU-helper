@@ -35,10 +35,11 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
+
+import ui.plugin.interfaces.*;
+
+import static java.util.Arrays.asList;
 
 public class Index implements ControlledStage {
     StageController stageController = null;
@@ -212,24 +213,20 @@ public class Index implements ControlledStage {
                 @Override
                 protected ArrayList<PlugInable> call() throws Exception {
                     ArrayList<PlugInable> plugInList = new ArrayList<>();
-                    File files = new File(Regist.pluginDirectory);
-                    ArrayList<File> plugins = new ArrayList<>();
-                    getAllFiles(files,plugins);
-                    for (File plugin:
-                         plugins) {
-                        System.out.println(plugin.getName());
-                        if (plugin.getName().startsWith("p")){
-                            String className = "ui.plugin.interfaces." +plugin.getName().replaceAll("\\.java","");
-//                            System.out.println(className);
-                            PlugInable plugInObject = (PlugInable)Class.forName(className).newInstance();
-                            plugInObject.setIndexAnchorPane(index);
-                            plugInObject.setStatusTag(stat);
-                            plugInList.add(plugInObject);
-//                            System.out.println(plugInObject.getTitle());
-//                            System.out.println(plugInList.size());
 
-                        }
+                        PlugInable p0 = new p0Calender();
+                        PlugInable p1 = new p532Download();
+                        PlugInable p2 = new pChooseClass();
+                        PlugInable p3 = new pScoreStat();
+                        PlugInable p4 = new pTestArr();
+
+                        plugInList.addAll(asList(p0,p1,p2,p3,p4));
+                    for (PlugInable plugInObject : plugInList) {
+                        plugInObject.setIndexAnchorPane(index);
+                        plugInObject.setStatusTag(stat);
                     }
+
+
                     return plugInList;
                 }
             };

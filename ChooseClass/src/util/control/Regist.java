@@ -23,7 +23,7 @@ public class Regist implements  Serializable{
 
 
     public static  String account = "login.dat"; //登录密码账号保存位置
-    public static  String loginPic = "/util/res/pic/container_2.jpg";//登录界面图片
+    public static  String loginPic = "/util/res/pic/bggg.jpg";//登录界面图片
     public static  String icon = "/util/res/pic/logo.png";//应用程序图标
     public static  String pluginDirectory = "src/ui/plugin/interfaces";//插件包所在目录
 

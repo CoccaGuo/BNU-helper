@@ -51,6 +51,7 @@ public class Score implements Listenable{
 //        }
         listen.setText("监听中");
         listen.setDisable(true);
+        select.setDisable(true);
         System.out.println("监听中");
         listener.setFreshTime(10);
         listener().listen();

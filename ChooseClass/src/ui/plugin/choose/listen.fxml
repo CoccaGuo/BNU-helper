@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="510.0" prefWidth="388.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.plugin.choose.Listen">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="选课—监听器设置">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="46.0" prefHeight="15.0" prefWidth="74.0" text="监听种类">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="type_any" layoutX="58.0" layoutY="76.0" mnemonicParsing="false" selected="true" text="任何课程放出">
+         <toggleGroup>
+            <ToggleGroup fx:id="it" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="type_fliter" layoutX="58.0" layoutY="104.0" mnemonicParsing="false" text="按条件筛选" toggleGroup="$it" />
+      <CheckBox fx:id="nameWith" disable="true" layoutX="79.0" layoutY="142.0" mnemonicParsing="false" text="课程名称含有..." />
+      <TextField fx:id="nameWithInput" disable="true" layoutX="194.0" layoutY="137.0" prefHeight="26.0" prefWidth="147.0" />
+      <TextField fx:id="typeWithInput" disable="true" layoutX="194.0" layoutY="169.0" prefHeight="26.0" prefWidth="147.0" />
+      <CheckBox fx:id="typeIs" disable="true" layoutX="79.0" layoutY="174.0" mnemonicParsing="false" text="课程模块属于..." />
+      <Label layoutX="28.0" layoutY="215.0" prefHeight="15.0" prefWidth="74.0" text="通知方式">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="toast" layoutX="65.0" layoutY="242.0" mnemonicParsing="false" selected="true" text="Windows Toast通知(推荐)">
+         <toggleGroup>
+            <ToggleGroup fx:id="tusuchi" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="alert" layoutX="65.0" layoutY="272.0" mnemonicParsing="false" text="JavaFX Alert通知" toggleGroup="$tusuchi" />
+      <Label layoutX="30.0" layoutY="316.0" prefHeight="15.0" prefWidth="74.0" text="选课操作">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="chooseClass" disable="true" layoutX="65.0" layoutY="343.0" mnemonicParsing="false" text="满足通知条件时自动选课(Pro)">
+         <toggleGroup>
+            <ToggleGroup fx:id="choose" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="nothing" layoutX="64.0" layoutY="373.0" mnemonicParsing="false" selected="true" text="无操作" toggleGroup="$choose" />
+      <Button fx:id="begin" layoutX="281.0" layoutY="455.0" mnemonicParsing="false" onAction="#begin" prefHeight="32.0" prefWidth="83.0" text="开始监听" />
+   </children>
+</AnchorPane>

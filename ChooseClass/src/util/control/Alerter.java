@@ -53,7 +53,7 @@ public class Alerter {
             Platform.runLater(new Runnable() {
                 @Override
                 public void run() {
-                    alert.show();
+                    alert.showAndWait();
                 }
             });
         }

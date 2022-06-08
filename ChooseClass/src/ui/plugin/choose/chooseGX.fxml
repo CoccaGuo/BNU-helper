@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+
+<AnchorPane prefHeight="624.0" prefWidth="955.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.plugin.choose.ChooseGX">
+   <children>
+      <Button layoutX="873.0" layoutY="14.0" mnemonicParsing="false" onAction="#listen" prefHeight="23.0" prefWidth="68.0" text="监听" />
+      <ScrollPane layoutY="49.0" prefHeight="575.0" prefWidth="955.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+         <content>
+            <FlowPane fx:id="pane" prefHeight="570.0" prefWidth="950.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

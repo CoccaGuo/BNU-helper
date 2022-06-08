@@ -9,10 +9,12 @@ import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.FlowPane;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.Paint;
 import javafx.stage.Stage;
 import ui.animation.InformationBox;
+import ui.component.ChooseClassItem;
 import ui.component.ExamResultItem;
 import ui.component.Website;
 import util.res.color.Colors;
@@ -28,10 +30,16 @@ public class UITest extends Application {
      // CustomedVBox customedVBox = new CustomedVBox("/util/res/pic/logo.png","532");
         //p0Calender calender = new p0Calender();
        // Regist.assist = new SchoolworkAssist("201711140121","CoccaGuo1998");
-        AnchorPane parent = new AnchorPane();
-        parent.setPrefWidth(800);
+        FlowPane parent = new FlowPane();
+        parent.setPrefWidth(955);
         parent.setPrefHeight(800);
         Scene scene = new Scene(parent);
+
+        ChooseClassItem item =new ChooseClassItem("理论力学xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx","煞风景可视电话发送卡粉红色法法","大家都女ID尼德兰哦按 啊","333");
+        parent.getChildren().add(item);
+
+        ChooseClassItem item2 =new ChooseClassItem("理论力学","煞风景可视电话发送卡粉红色法法xxxxxxxxxxxxxxxxxxx","大家都女ID尼德兰哦按 xxxxxxxxxxxxxxxxxxxxxxxx啊","999/999");
+        parent.getChildren().add(item2);
        // Website website = new Website("体育打卡", Color.GOLD,"http://jsty.bnu.edu.cn/view/sport/student/index");
       //  parent.getChildren().add(website);
 

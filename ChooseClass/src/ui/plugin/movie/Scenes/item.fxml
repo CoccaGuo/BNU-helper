@@ -5,10 +5,9 @@
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="624.0" prefWidth="955.0" style="-fx-background-color: #fffeff;" stylesheets="@../css/textarea.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.plugin.movie.Scenes.ItemCont">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="624.0" prefWidth="955.0" style="-fx-background-color: #fffeff;" stylesheets="@../css/textarea.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.plugin.movie.Scenes.ItemCont">
    <children>
       <ImageView fx:id="img" fitHeight="330.0" fitWidth="260.0" layoutX="3.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="3.0" AnchorPane.topAnchor="65.0" />
       <Label fx:id="name" layoutX="14.0" layoutY="14.0" prefHeight="51.0" prefWidth="936.0" underline="true" wrapText="true" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="14.0">
@@ -16,17 +15,16 @@
             <Font size="20.0" />
          </font>
       </Label>
-      <TextArea fx:id="info" editable="false" layoutX="277.0" layoutY="65.0" prefHeight="245.0" prefWidth="667.0" wrapText="true" AnchorPane.leftAnchor="277.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="65.0">
+      <TextArea fx:id="info" editable="false" layoutX="277.0" layoutY="65.0" prefHeight="377.0" prefWidth="667.0" wrapText="true" AnchorPane.leftAnchor="277.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="65.0">
          <font>
             <Font size="17.0" />
          </font>
       </TextArea>
-      <TextArea fx:id="summary" layoutX="277.0" layoutY="318.0" prefHeight="128.0" prefWidth="667.0" text=" " wrapText="true" AnchorPane.bottomAnchor="178.0" AnchorPane.leftAnchor="277.0" AnchorPane.rightAnchor="11.0">
+      <TextArea fx:id="summary" layoutX="274.0" layoutY="446.0" prefHeight="159.0" prefWidth="667.0" text=" " wrapText="true" AnchorPane.bottomAnchor="19.0" AnchorPane.leftAnchor="274.0" AnchorPane.rightAnchor="14.0">
          <font>
             <Font size="15.0" />
          </font>
       </TextArea>
-      <FlowPane fx:id="download" layoutX="1.0" layoutY="459.0" prefHeight="166.0" prefWidth="955.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0" />
       <Button fx:id="dlBtn" layoutX="72.0" layoutY="415.0" mnemonicParsing="false" onAction="#download" prefHeight="31.0" prefWidth="163.0" styleClass="node" text="下载" AnchorPane.leftAnchor="72.0" AnchorPane.topAnchor="415.0" />
    </children>
 </AnchorPane>
